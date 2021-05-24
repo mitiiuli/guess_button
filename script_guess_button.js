@@ -1,7 +1,6 @@
-
+var winningButton = Math.floor(Math.random() * 3 + 1);
 function guess(source)
 {
-    var winningButton = Math.floor(Math.random() * 3 + 1);
     if (source === winningButton.toString()) {
     document.getElementById("status").style.color = "green";
     document.getElementById("status").innerHTML = "Status: Winner!!!";
